@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leaflet Step-1</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+
+  <!-- found helpful legend on mapbox but it wont stay after refreshing -->
+  <div id='quake-legend' class='legend'>
+    <h4>Magnitudes</h4>
+    <div><span style='background-color: #a3ff00'></span>0-1</div>
+    <div><span style='background-color: #F4FF00'></span>1-2</div>
+    <div><span style='background-color: #FFCC00'></span>2-3</div>
+    <div><span style='background-color: #FF9A00'></span>3-4</div>
+    <div><span style='background-color: #FF7700'></span>4-5</div>
+    <div><span style='background-color: #FF0C00'></span>5+</div>
+
+  </div>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <!-- D3 JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+</body>
+</html>
